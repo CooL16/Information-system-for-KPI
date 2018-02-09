@@ -22,9 +22,21 @@
     font-size: 35px;
     margin-left: 150px;
 }
+
+.space {
+    width: 50px;
+}
+
+#mmenu-vhod {
+    height: 390px;
+    width: 40px;
+}
+
 input::-webkit-input-placeholder { color: #fff; }
 input::-moz-placeholder { color: #fff; }
+
 /*Анимация инпутов*/
+
 .group        {
     position:relative;
     margin-bottom:45px;
@@ -117,7 +129,9 @@ input:focus ~ .highlight {
     from { background:#5264AE; }
     to  { width:0; background:transparent; }
 }
+
 /*Конец анимации инпутов*/
+
 #login{
     color: #fff;
 }
@@ -154,24 +168,6 @@ input:focus ~ .highlight {
     position: relative;
     overflow: hidden;
 }
-
-@keyframes ripple {
-    0% {
-        transform: scale(0, 0);
-        opacity: 1;
-    }
-    20% {
-        transform: scale(25, 25);
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        transform: scale(40, 40);
-    }
-}
-
-
-
 
 #click:focus:not(:active)::after {
     animation: ripple 1s ease-out;
@@ -241,6 +237,10 @@ input:focus ~ .highlight {
     overflow: hidden;
 }
 
+#click1:focus:not(:active)::after {
+    animation: ripple 1s ease-out;
+}
+
 @keyframes ripple {
     0% {
         transform: scale(0, 0);
@@ -254,10 +254,6 @@ input:focus ~ .highlight {
         opacity: 0;
         transform: scale(40, 40);
     }
-}
-
-#click1:focus:not(:active)::after {
-    animation: ripple 1s ease-out;
 }
 
 /*Конец анимации*/
@@ -333,24 +329,6 @@ input:focus ~ .highlight {
     cursor: default;
 }
 
-@keyframes ripple {
-    0% {
-        transform: scale(0, 0);
-        opacity: 1;
-    }
-    20% {
-        transform: scale(25, 25);
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        transform: scale(40, 40);
-    }
-}
-
-
-
-
 .secondary:focus:not(:active)::after {
     animation: ripple 1s ease-out;
 }
@@ -397,17 +375,6 @@ input:focus ~ .highlight {
     left: 0;
     right: 0;
 }
-
-
-.space {
-    width: 50px;
-}
-
-#mmenu-vhod {
-    height: 390px;
-    width: 40px;
-}
-
 
 /*Адаптация меню под телефон*/
 
@@ -546,3 +513,4 @@ input:focus ~ .highlight {
 .show {
     opacity: 1;
 }
+/*Окончание стилей для работы скрипта*/

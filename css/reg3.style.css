@@ -75,11 +75,7 @@ header {
 	.group {
 		margin-left: 10px;
 	}
-	.surname {
-		margin-top: 0px;
-	}
-
-	.nameG {
+	.surname, .nameG {
 		margin-top: 0px;
 	}
 
