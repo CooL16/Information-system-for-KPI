@@ -4,7 +4,7 @@
 <head>
     
     <link rel="stylesheet" href="css/bootstrap.css">
-    <meta charset="utf-8">
+    <metaєharset="utf-8">
 
     <title>Реєстрація студента</title>
     <meta name="description" content="">
@@ -87,22 +87,29 @@
                 </div>
             </div>
         </div>     <!-- ********************** -->
-        <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
                 <p id="dwtext" class="dwtext">Завантажте фото залікової книжки: </p>
                 <img class="srb" id="srb" src="img/example.jpg" alt="Заліковка" style="display: none;">
             </div>
-            <div class="col-sm-6 col-md-2 col-lg-2 col-lg-2">
-                <button id="click" class="click">
-                    <p style="margin-top: -5px;">Upload img</p>
+            <div class="col-sm-6 col-md-5 col-lg-4 col-xl-3">
+                <div class="fileform">
+                    <div id="fileformlabel"></div>
+                    <div class="selectbutton">Обзор</div>
+                    <input type="file" name="upload" id="upload" onchange="getName(this.value);" />
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-4 col-xl-4">
+                <button id="click" class="click" style="margin-top: 10px;">
+                    <p style="margin-top: -5px;">Загрузити</p>
                 </button>
             </div>
         </div>
         <div class="row" id="photo">
-            <img id="srb" class="srb" src="srb/srb1.jpg" alt="SRB" />
+            
         </div>
-        <div class="row">
-            <div class="col-sx-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-sx-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                 <div class="group email">
                     <input id="login" class="login" type="text" required>
                     <span class="highlight" id="highlight"></span>
@@ -110,7 +117,7 @@
                     <label>E-mail</label>
                 </div>
             </div>
-            <div class="col-sx-6 col-sm-6 col-md-2 col-lg-2 col-lg-2">
+            <div class="col-sx-4 col-sm-4 col-md-2 col-lg-2 col-lg-2">
                 <button id="click2" class="click2"><p style="margin-top: -5px;">Підвердити</p></button>
             </div>
         </div>     

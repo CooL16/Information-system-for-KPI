@@ -4,7 +4,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="css/reg3.style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <meta charset="utf-8">
+    <metaєharset="utf-8">
 
     <title>Реєстрація групи</title>
     <meta name="description" content="">
@@ -47,7 +47,7 @@
             Реєстрація групи
         </p>
     </div>
-    <div class="container-fluid registration" style="overflow: auto;">
+    <div class="container-fluid registration">
         <p id="firstText">
             Реєстрація сторінки групи має проводитися тільки старостою цієї групи<a style="color: red;">*</a>
         </p>
@@ -87,53 +87,7 @@
                     <label>Пароль</label>
                 </div>
             </div>
-                </div>
-
-    
-    <input type="number" name="number" id="counT" min="1" max="35">
-     <input type="button" onclick="getValue();add_input();lol();" value="Добавить элемент">
-<form>
-<div class="container">
-    <div class="row">
-<div id="inputi"><input style="display: none;" name="my_input">
-</div>
-</div>
     </div>
-</div>
-</form>
-
-<script>
-
-var p = document.getElementById("inputi");
-
-var length = 1;
-
-function add_input() {
-for(var i = length;i<=text;i++){
- var new_input = document.createElement("input");
-
- new_input.name = "my_input";
-
- var div = document.createElement('div');
-
- var divv = document.createElement('div');
-
- div.className += "col";
-
- div.innerHTML = '<br>' + '<br>';
-
- div.appendChild(new_input);
-
- p.appendChild(div);
-
- length++;
-}
-};
-
-</script>
-            
-
-
 </header>
 <div id="my-content">
     <link rel="stylesheet" type="text/css" href="css/reg3.style.css">

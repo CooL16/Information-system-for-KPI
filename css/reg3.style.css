@@ -78,7 +78,6 @@ header {
 	.surname, .nameG {
 		margin-top: 0px;
 	}
-
 }
 
 /* --------------- Адаптация под iPhone 5 --------------- */
@@ -99,14 +98,9 @@ header {
 	.group {
 		margin-left: 10px;
 	}
-	.surname {
+	.surname , .nameG{
 		margin-top: 0px;
 	}
-
-	.nameG {
-		margin-top: 0px;
-	}
-
 }
 
 /* --------------- Адаптация под Galaxy S5 -------------- */
@@ -116,11 +110,7 @@ header {
 		margin-left: 10px;
 	}
 
-	.surname {
-		margin-top: 0px;
-	}
-
-	.nameG {
+	.surname, .nameG {
 		margin-top: 0px;
 	}
 }
@@ -140,9 +130,12 @@ header {
 
 
 /*Инпуты*/
+
 input::-webkit-input-placeholder { color: #00ffff; }
 input::-moz-placeholder { color: #00ffff; }
+
 /*Анимация инпутов*/
+
 .group {
 	opacity: 1;
     position:relative;
@@ -237,6 +230,7 @@ input:focus ~ .highlight {
     from { background:#5264AE; }
     to  { width:0; background:transparent; }
 }
+
 /*Инпуты*/
 
 

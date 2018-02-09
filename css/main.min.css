@@ -23,15 +23,6 @@
     margin-left: 150px;
 }
 
-.space {
-    width: 50px;
-}
-
-#mmenu-vhod {
-    height: 390px;
-    width: 40px;
-}
-
 input::-webkit-input-placeholder { color: #fff; }
 input::-moz-placeholder { color: #fff; }
 
@@ -163,17 +154,30 @@ input:focus ~ .highlight {
     background: #111;
 }
 
-
-#click{
-    position: relative;
-    overflow: hidden;
+@keyframes ripple {
+    0% {
+        transform: scale(0, 0);
+        opacity: 1;
+    }
+    20% {
+        transform: scale(25, 25);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(40, 40);
+    }
 }
+
+
+
 
 #click:focus:not(:active)::after {
     animation: ripple 1s ease-out;
 }
 
 /*Конец анимации*/
+
 /*Ховер ввиде нижней линии для кнопочки*/
 
 #click {
@@ -231,16 +235,6 @@ input:focus ~ .highlight {
     background: #111;
 }
 
-
-#click1{
-    position: relative;
-    overflow: hidden;
-}
-
-#click1:focus:not(:active)::after {
-    animation: ripple 1s ease-out;
-}
-
 @keyframes ripple {
     0% {
         transform: scale(0, 0);
@@ -256,8 +250,14 @@ input:focus ~ .highlight {
     }
 }
 
+#click1:focus:not(:active)::after {
+    animation: ripple 1s ease-out;
+}
+
 /*Конец анимации*/
+
 /*Ховер ввиде нижней линии для кнопочки*/
+
 #click1 {
     outline : none;
     z-index: 2;
@@ -313,7 +313,7 @@ input:focus ~ .highlight {
     position: absolute;
     left: -10px;
     border: none;
-    cursor: pointer;
+    cursor: default;
     color: #9f9f9f;
     padding: 5px 15px;
     border-radius: 2px;
@@ -322,11 +322,19 @@ input:focus ~ .highlight {
     background: #111;
 }
 
-
-.secondary{
-    position: relative;
-    overflow: hidden;
-    cursor: default;
+@keyframes ripple {
+    0% {
+        transform: scale(0, 0);
+        opacity: 1;
+    }
+    20% {
+        transform: scale(25, 25);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(40, 40);
+    }
 }
 
 .secondary:focus:not(:active)::after {
@@ -334,7 +342,9 @@ input:focus ~ .highlight {
 }
 
 /*Конец анимации*/
+
 /*Ховер ввиде нижней линии для кнопочки*/
+
 .secondary{
     outline : none;
     margin-left: 40px;
@@ -375,6 +385,17 @@ input:focus ~ .highlight {
     left: 0;
     right: 0;
 }
+
+
+.space {
+    width: 50px;
+}
+
+#mmenu-vhod {
+    height: 390px;
+    width: 40px;
+}
+
 
 /*Адаптация меню под телефон*/
 
@@ -496,7 +517,9 @@ input:focus ~ .highlight {
 	}
 }
 /*Окончание адаптации под телефоны*/
+
 /*Стили для работы скрипта по анимации кнопок регистрации*/
+
 .btn {
     opacity: 1;
     transition: all 0.6s ease-in-out;
@@ -513,4 +536,3 @@ input:focus ~ .highlight {
 .show {
     opacity: 1;
 }
-/*Окончание стилей для работы скрипта*/
