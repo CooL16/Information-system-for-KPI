@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <link rel="stylesheet" href="css/bootstrap.css">
     <meta charset="utf-8">
@@ -41,12 +40,17 @@
 </head>
 
 <body class="ishome" ng-app="app" ng-controller="Ctrl">
-<header style="background-color: #000103;display: none;">
+<header style="background-color: #000103;">
     <div class="container">
         <div class="row">
-            <div class="col" style="margin-left: 500px;">
-    <ul style="background-color: #000103;margin-bottom: 0px;">
-    <li translate="QUESTION"></li><button type="button" class="btn btn-info active translate" ng-click="changeLanguage('en')" translate="BUTTON_LANG_EN"></button><button type="button" class="btn btn-info active translate"ng-click="changeLanguage('ru')" translate="BUTTON_LANG_RU"></button>
+            <div class="col">
+                <ul style="background-color: #000103;">
+                    <button type="button" class="btn btn-info active translate" ng-click="changeLanguage('en')"
+                            translate="BUTTON_LANG_EN"></button>
+                    <button type="button" class="btn btn-info active translate" ng-click="changeLanguage('ru')"
+                            translate="BUTTON_LANG_RU"></button>
+                    <button type="button" class="btn btn-info active translate" ng-click="changeLanguage('ua')"
+                            translate="BUTTON_LANG_UA"></button>
     </ul>
             </div>
         </div>
@@ -71,7 +75,7 @@
             </a>
             <nav id="my-menu">
                 <ul>
-                    <p id="enter">Вхід</p>
+                    <p translate="enter" id="enter"></p>
                     <form id="enter1">
 
                         <li>
@@ -79,7 +83,7 @@
                                 <input id="login" type="text" required>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>Логін</label>
+                                <label translate="Login"></label>
                             </div>
                         </li>
                         <li>
@@ -87,17 +91,20 @@
                                 <input id="password" type="password" required>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>Пароль</label>
+                                <label translate="Password"></label>
                             </div>
                         </li>
                     </form>
-                    <button id="click">Ввійти</button>
-                    <p id="textReg">До тепер немає аккаунту?</p>
+                    <button translate="Log_in" id="click"></button>
+                    <p id="textReg" translate="QUESTION"></p>
                     <li>
-                        <button class="btn" id="click1">Реєстрація</button>
-                        <button onclick='location.href="reg1.html"' class="btn secondary">Реєстрація для студента</button>
-                        <button onclick='location.href="reg2.html"' class="btn secondary">Реєстрація для викладача</button>
-                        <button onclick='location.href="reg3.html"' class="btn secondary" style="width: 210px;">Реєстрація сторінки групи</button>
+                        <button translate="Registration" class="btn" id="click1"></button>
+                        <button translate="RegForStudent" onclick='location.href="reg1.html"'
+                                class="btn secondary"></button>
+                        <button translate="RegForTeacher" onclick='location.href="reg2.html"' class="btn secondary"
+                                style="width: 230px;"></button>
+                        <button translate="RegForGroup" onclick='location.href="reg3.html"' class="btn secondary"
+                                style="width: 225px;"></button>
                     </li>
     
                 </ul>
@@ -124,8 +131,8 @@
                                     <h1 id="banner">KPI GROUPS</h1>
                                 </div>
 
-                                <p><strong>KPI GROUPS</strong> це унікальний проект який дозволяє кожному бажаючому
-                                    студенту створити власну сторінку для своєї групи</p>
+                                <p><strong>KPI GROUPS</strong><span style="margin-left: 5px;" translate="speech"> це унікальний проект який дозволяє кожному бажаючому
+                                    студенту створити власну сторінку для своєї групи</span></p>
 
                             </div>
 
@@ -149,10 +156,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-sm-6">
-                        <i class="fa fa-location-arrow"></i> Место разработки - "Белка"
+                        <i class="fa fa-location-arrow">
+                            <span style="color: #fff;" translate="develop"></span>
+                        </i>
                     </div>
                     <div class="col-md-6 col-sm-6">
-                        <i class="fa fa-mobile"></i> Тех. поддержка: +380 (68) 254-15-17
+                        <i class="fa fa-mobile"></i>
+                        <span translate="support"></span>
                     </div>
                 </div>
             </div>
